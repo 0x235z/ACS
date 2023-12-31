@@ -105,8 +105,8 @@ local Tabs = Instance.new("Frame")
 local TabButtons = Instance.new("ImageLabel")
 local TabButtonLayout = Instance.new("UIListLayout")
 
-UILibrary.Name = tostring(math.random())
-UILibrary.Parent = game:GetService("CoreGui")
+UILibrary.Name = math.random()
+UILibrary.Parent = if RunService:IsStudio() then LocalPlayer.PlayerGui else game:GetService("CoreGui")
 UILibrary.DisplayOrder = 1
 UILibrary.ZIndexBehavior = Enum.ZIndexBehavior.Global
 UILibrary.ResetOnSpawn = false
