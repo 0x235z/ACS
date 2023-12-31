@@ -92,13 +92,13 @@ do
 
 	combat_section:CreateToggle("Explosion bullet", function(state) 
 		if data then
-			data.ExplosiveHit = if state then true else false
+			data.ExplosiveHit = state
 		end
 	end)
 	
 	combat_section:CreateToggle("No can break", function(state)
 		if data then
-			data.CanBreak = if state then false else true
+			data.CanBreak = not state
 		end
 	end)
 
