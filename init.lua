@@ -43,7 +43,7 @@ local events_section2 = events_tab:CreateSection("Players")
 
 -- slient aim & others section funcs
 do
-	-- sem hookfunction ou getupvalues e setupvalues nao da ne nigga
+	-- sem hookfunction ou getupvalues e setupvalues nao da ne e complicado fazer sem...
 	combat_section:CreateToggle("Slient Aim", function(state)
 		print("thug")
 	end)
