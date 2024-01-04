@@ -53,7 +53,7 @@ function Draw:update_draw()
 	state = not state
 	while state do
 		self.Frame.Position = UDim2.new(0, (mouse.X - (self.Frame.Size.X.Scale / 2)), 0, (mouse.Y - (self.Frame.Size.Y.Scale / 2)))
-		task.wait(.001)
+		task.wait()
 	end
 end
 
